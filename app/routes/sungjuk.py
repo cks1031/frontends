@@ -15,3 +15,5 @@ async def sungjuk(req: Request):
 @sungjuk_router.post('/', response_class=HTMLResponse)
 async def sungjukok():
     pass
+
+# sungjuk 요청에 대한 뷰 추가
