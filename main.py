@@ -20,6 +20,7 @@ app.include_router(css_router, prefix='/css')
 
 app.include_router(jscript_router, prefix='/js')
 
+# 사원등록프로그램
 app.include_router(emp_router, prefix='/emp')
 
 # index 라우트
