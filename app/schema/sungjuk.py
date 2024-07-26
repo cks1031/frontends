@@ -9,4 +9,3 @@ class SungJuk(BaseModel):
     tot: int
     avg: float
     grd: str
-
