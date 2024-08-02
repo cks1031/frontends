@@ -21,7 +21,13 @@
         .clear { clear: both }
 
         /* nav */
-        nav { border: 1px solid darkgreen; }
+        nav { border: 1px solid darkgreen; background: #cccccc; height: 35px; }
+        nav input { border: 1px solid black; margin-left: 20px; width: 300px; padding: 5px;}
+        nav select { width: 150px; padding: 4px;}
+        nav button { background: #999999; color: white; width: 150px;
+            font-size: 16px; border-radius: 8px; padding: 2px;}
+
+        .navgroup {height: 35px; display: table-cell; vertical-align: middle}
 
         /* main */
         main { border: 1px solid darkviolet; }
@@ -44,11 +50,13 @@
         <a href="$">Create Account</a> </div>
     </header>
     <nav class="clear">
+        <div class="navgroup">
         <input type="text" name="search">
         <select name="findtype">
             <option>Category</option>
         </select>
         <button type="button" id="findbtn">SEARCH</button>
+        </div>
     </nav>
     <main>
         <section>
