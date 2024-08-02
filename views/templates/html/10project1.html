@@ -32,6 +32,17 @@
         /* main */
         main { border: 1px solid darkviolet; }
 
+        /* section1 */
+        section:first-child {}
+        /* section2 */
+        section:last-child { height: 250px}
+        #products h2 { margin-left: 20px}
+        #products ul { list-style: none; padding: 0; }
+        #products li { display: inline-block; margin-left: 6% }
+        #products img { width: 100px; height: 100px;
+            background: #cccccc; border-radius: 7px; }
+        #products a { display: block; text-align: center }
+
         /* footer */
         footer { border: 1px solid darkcyan; }
         footer ul { float: left; list-style: none; margin-bottom: 50px}
@@ -80,34 +91,35 @@
             </div>
         </section>
         <section>
-            <div id="products"></div>
+            <div id="products">
                 <h2>Today's Specials</h2>
                 <ul>
                     <li>
-                        <img src="#">
-                        <a href="#">Product1</a>
+                        <img src="/static/img/home.png">
+                        <a href="#">Product 1</a>
+                    </li>
+                    <li>
+                        <img src="/static/img/plane.png">
+                        <a href="#">Product 2</a>
                     </li>
                     <li>
                         <img src="#">
-                        <a href="#">Product2</a>
+                        <a href="#">Product 3</a>
                     </li>
                     <li>
                         <img src="#">
-                        <a href="#">Product3</a>
+                        <a href="#">Product 4</a>
                     </li>
                     <li>
                         <img src="#">
-                        <a href="#">Product4</a>
+                        <a href="#">Product 5</a>
                     </li>
                     <li>
                         <img src="#">
-                        <a href="#">Product5</a>
-                    </li>
-                    <li>
-                        <img src="#">
-                        <a href="#">Product6</a>
+                        <a href="#">Product 6</a>
                     </li>
                 </ul>
+            </div>
         </section>
     </main>
     <footer>
