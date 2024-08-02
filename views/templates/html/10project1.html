@@ -12,7 +12,7 @@
 
         header h1 { background: #cccccc; width: 150px; text-align: center; padding: 7px 0; margin-left: 20px; float: left}
 
-        header ul { list-style: none; padding: 0; float: right; margin-right: 10px; }
+        header ul { list-style: none; padding: 0; float: right; margin-right: 20px; }
         header ul li { display: inline-block; padding: 0 1px; }
         header ul li:after { content: ' |' }
         header ul li:last-child:after { content: '' }
@@ -33,14 +33,23 @@
         main { border: 1px solid darkviolet; }
 
         /* section1 */
-        section:first-child {}
+        section:first-child { height: 280px }
+        aside { width: 25%; float: left; margin-left: 20px;}
+        aside ul { border: 3px solid black; list-style: none; padding: 0}
+        aside li { padding: 8px 12px; border-bottom: 2px solid silver}
+        aside li:last-child { border: none }
+        #banner { width: 70%; float: right; border: 3px solid black;
+            margin-right: 20px; margin-top: 16px; height: 273px}
+        #banner p { text-align: center; margin-top: 127px}
+        #banner ul { list-style: none; padding: 0; float: right; margin: 55px 18px }
+        #banner li { display: inline; padding: 5px 10px;
+            background: #cccccc; margin: 5px }
         /* section2 */
         section:last-child { height: 250px}
         #products h2 { margin-left: 20px}
         #products ul { list-style: none; padding: 0; }
         #products li { display: inline-block; margin-left: 6% }
-        #products img { width: 100px; height: 100px;
-            /*background: #cccccc;*/ border-radius: 7px; }
+        #products img { width: 100px; height: 100px; border-radius: 7px; }
         #products a { display: block; text-align: center }
 
         /* footer */
@@ -90,7 +99,7 @@
                 <ul><li>1</li><li>2</li><li>3</li><li>4</li></ul>
             </div>
         </section>
-        <section>
+        <section class="clear">
             <div id="products">
                 <h2>Today's Specials</h2>
                 <ul>
