@@ -134,7 +134,7 @@
         알 수 없는 값을 나타내는데 사용</p>
 
     <script>
-        let name =null; //변수가 선언되지 않음
+        let name = null; //변수가 선언되지 않음
 
         document.write(`이름 : ${name}`, '<br>')
     </script>
@@ -156,12 +156,15 @@
 
     <script>
         name = '나나';
-        let kor = 80;
-        let eng = 90;
-        let mat = 70;
+        let kor = 99;
+        let eng = 99;
+        let mat = 98;
 
-        document.write(`이름 : ${name}`,'<br>',`국어 : ${kor}`,'<br>',`영어 : ${eng}`,'<br>',
-            `수학 : ${mat}`,'<br>',`총점 : ${tot=kor+eng+mat}`,'<br>',`평균 : ${avg=tot/3}`,'<br>');
+        let tot=kor+eng+mat;
+        let avg=tot/3;
+
+        document.write(`이름 : ${name}, 국어 : ${kor}, 영어 : ${eng}, 수학 : ${mat}`,'<br>');
+        document.write(`총점 : ${tot}, 평균 : ${avg}`,'<br>')
 
     </script>
 
