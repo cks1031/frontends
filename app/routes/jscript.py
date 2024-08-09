@@ -71,3 +71,7 @@ async def form(req: Request):
 @jscript_router.get('/ajax')
 async def ajax(req: Request):
     return templates.TemplateResponse('js/15ajax.html', {'request': req})
+
+@jscript_router.get('/zipcode')
+async def zipcode(req: Request):
+    return templates.TemplateResponse('js/16zipcode.html', {'request': req})
